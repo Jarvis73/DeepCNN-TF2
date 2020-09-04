@@ -1,4 +1,4 @@
-# Copyright 2019 Jianwei Zhang All Right Reserved.
+# Copyright 2019-2020 Jianwei Zhang All Right Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,6 @@
 import os
 # Disable Tensorflow device information logging
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-from tensorflow.python.util import deprecation
-deprecation._PRINT_DEPRECATION_WARNINGS = False
 
 import tqdm
 import argparse

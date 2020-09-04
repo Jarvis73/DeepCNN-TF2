@@ -127,4 +127,5 @@ dmypy.json
 # Project
 .idea/
 *_depre.*
+.vscode/
 data/

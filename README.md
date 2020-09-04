@@ -1,41 +1,50 @@
-# Examples for Tensorflow 2.0
-Tensorflow 2.0 examples of baseline networks.
+# Examples for Tensorflow v2
+Tensorflow v2 examples of baseline networks.
 
 ## 0. Requirements
 
-* python==3.6
-* tensorflow=2.0.0-beta1
-* numpy==1.16.4
-* cudatoolkit==9.2
-* cudnn==7.6.0
-* tqdm==4.32.1
+* python==3.7
+* tensorflow=2.2.0
+* numpy==1.18.8
+* cudatoolkit==10.1.243
+* cudnn==7.6.5
+* tqdm
 
 
 ## 1. Datasets
 
 - **mnist** (Auto-download): 60000 training images with shape 28x28 and 10000 test images.
+- **Cifar** (Auto-download): 60000 training 
 
 
-## 2. Train Model
+## 2. Training/Evaluating Model
 
-### 2.0 Start with Tensorflow 2.0
+### 2.1 Start with Tensorflow v2
 
-Training a simple CNN model (1 conv layer and 2 dense layer) for mnist classification task:
+Training a simple CNN model with the API `fit()` of the `tf.Keras`:
 
 ```bash
-python main_mini.py train
+python main_mini_cnn7layers.py train
 ```
 
 Test model with test dataset:
 
 ```bash
-python main_mini.py test
+python main_mini_cnn7layers.py test
 ```
 
-## 3. TODO List
+### 2.2 Custom training/testing loop
 
-* [ ] Full usage and train/val/test schemes
-* [ ] Baseline models
-* [ ] Small datasets
-* [ ] Data augmentation example
-* [ ] Tensorboard example
+```bash
+python main_custom.py train
+```
+
+## 3 LDA loss
+
+Reference:
+
+> Dorfer M, Kelz R, Widmer G. Deep linear discriminant analysis[J]. arXiv preprint arXiv:1511.04707, 2015.
+
+```bash
+python main_lda.py train
+```
