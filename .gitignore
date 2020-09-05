@@ -128,4 +128,10 @@ dmypy.json
 .idea/
 *_depre.*
 .vscode/
+
+*tfevents*
+
 data/
+dst_ckpt/
+!/src_ckpt/best.data-00000-of-00002
+
