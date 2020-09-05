@@ -66,7 +66,9 @@ tensorboard --logdir ./
 
 Open browser with address: `http://localhost:6006/#projector` 
 
+Results in 2D (MNIST embedding):
 
+![mnist embedding](https://raw.githubusercontent.com/Jarvis73/DeepCNN-TF2/master/projector/mnist/tSNE-mnist-features.png)
 
 
 ## 4 LDA loss
